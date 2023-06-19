@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill you this form with the required information</p>
+    <form action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label>Enter Your First Name: <input type="text" name="firstName" required></label>
+            <label>Enter Your Last Name: <input type="text" name="lastName" required></label>
+            <label>Enter Your Email: <input type="email" name="email" required></label>
+            <label>Create a New Password: <input type="password" pattern="[a-z0-5]{8}" name="password" required></label>
+        </fieldset>
+        <fieldset>
+            <label><input type="radio" name="account-type" class="inline">Personal Account</label>
+            <label><input type="radio" name="account-type" class="inline">Busines Account</label>
+            <label><input type="checkbox" name="tac" class="inline" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service">terms and conditions</a></label>
+        </fieldset>
+        <fieldset>
+            <label><input type="file" name="pic">Upload a profile picture: </label>
+            <label>Input your age (years): <input type="number" min="13" max="120" name="age"></label>
+            <label> How did you hear of us? 
+                <select name="selections">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label>Provide a bio: <textarea rows="3" cols="30" placeholder="I like coding on the beach..." name="box"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
